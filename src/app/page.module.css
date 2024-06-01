@@ -1,47 +1,91 @@
+/* Общие стили для всех устройств */
 .main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: 3rem;
+  align-items: center; /* Выровняем по центру */
+  padding: 1rem;
   min-height: 100vh;
   background-image: url("../img/tile.png");
-
   background-repeat: repeat;
 }
-.content{
-  flex-direction: row;
+
+.content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
 }
-.text{
+
+.text {
   align-self: center;
+  color: #FFFFFF;
   font-family: "ThaleahFat", "Bitcell", serif;
-  font-size: 64px;
-}
-
-.description{
-  font-family: "ThaleahFat", "Bitcell", serif;
-  float: left;
-  width: 760px;
-}
-.descriptionHeader{
   font-size: 48px;
-  text-align: center;
-}
-.descriptionContent{
-  font-family: "ThaleahFat", "Bitcell", serif;
-  font-size: 32px;
-  text-align: justify;
+  text-align: center; /* Выровняем текст по центру */
+  max-width: 90%; /* Установим максимальную ширину */
 }
 
-.descriptionImg{
-  float: right;
+.description {
+  font-family: "ThaleahFat", "Bitcell", serif;
+  width: 100%;
+  max-width: 100%;
+}
+
+.descriptionHeader {
+  font-size: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 90%; /* Установим максимальную ширину */
+}
+
+.descriptionContent {
+  font-family: "ThaleahFat", "Bitcell", serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: justify;
+  max-width: 90%; /* Установим максимальную ширину */
+}
+
+.descriptionImg {
+  width: 100%;
+  height: auto;
   margin-top: 20px;
   border: #3f3865;
   border-radius: 5px;
   border-style: solid;
+  max-width: 90%; /* Установим максимальную ширину */
 }
 
-.a{
+.a {
   color: cornflowerblue;
+}
+
+/* Медиа-запросы для адаптации на мобильные устройства */
+@media (max-width: 768px) {
+  .text {
+    font-size: 36px;
+  }
+
+  .descriptionHeader {
+    font-size: 24px;
+  }
+
+  .descriptionContent {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    font-size: 24px;
+  }
+
+  .descriptionHeader {
+    font-size: 18px;
+  }
+
+  .descriptionContent {
+    font-size: 14px;
+  }
 }
