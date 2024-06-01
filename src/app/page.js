@@ -1,8 +1,8 @@
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 import Image from "next/image";
-import screenshot1 from "/public/screenshot1.png"
-import screenshot2 from "/public/screenshot2.png"
-import screenshot3 from "/public/screenshot3.png"
+import screenshot1 from "/public/screenshot1.png";
+import screenshot2 from "/public/screenshot2.png";
+import screenshot3 from "/public/screenshot3.png";
 
 export default function Home() {
     return (
@@ -22,7 +22,6 @@ export default function Home() {
                 <Image src={screenshot1} alt={"screenshot1"} width={760} height={480} className={styles.descriptionImg}/>
             </div>
             <div className={styles.content}>
-                <Image src={screenshot2} alt={"screenshot2"} width={760} height={480} className={styles.descriptionImg}/>
                 <div className={styles.description}>
                     <p className={styles.descriptionContent}>
                         Игроку предоставляется возможность прочувствовать ключевые
@@ -36,32 +35,33 @@ export default function Home() {
                         Разделение на секции также обусловлено применением разных геймплейных особенностей.
                     </p>
                 </div>
+                <Image src={screenshot2} alt={"screenshot2"} width={760} height={480} className={styles.descriptionImg}/>
             </div>
             <div className={styles.content}>
-                <Image src={screenshot3} alt={"screenshot3"} width={760} height={480} className={styles.descriptionImg}/>
                 <div className={styles.description}>
-                    <p className={styles.descriptionContent}>
-                        Над игрой работали:
-                    </p>
-                    <li className={styles.descriptionContent}>
-                        <a className={styles.a} href={"https://github.com/DmitriySkiba"}>Dmitriy Skibinskiy</a>
-                    </li>
-                    <li className={styles.descriptionContent}>
-                        <a className={styles.a} href={"https://github.com/MaksimBaturin"}>Maksim Baturin</a>
-                    </li>
-                    <li className={styles.descriptionContent}>
-                        <a className={styles.a} href={"https://github.com/AsanSmailov"}>Asan Smailov</a>
-                    </li>
-                    <li className={styles.descriptionContent}>
-                        <a className={styles.a} href={"https://github.com/DiarrheaGiver"}>Amet Chalbash</a>
-                    </li>
-                    <li className={styles.descriptionContent}>
-                        <a className={styles.a} href={"https://github.com/EmirBuzhurov"}>Emir Buzhurov</a>
-                    </li>
+                    <p className={styles.descriptionContent}>Над игрой работали:</p>
+                    <ul>
+                        <li className={styles.descriptionContent}>
+                            <a className={styles.a} href={"https://github.com/DmitriySkiba"}>Dmitriy Skibinskiy</a>
+                        </li>
+                        <li className={styles.descriptionContent}>
+                            <a className={styles.a} href={"https://github.com/MaksimBaturin"}>Maksim Baturin</a>
+                        </li>
+                        <li className={styles.descriptionContent}>
+                            <a className={styles.a} href={"https://github.com/AsanSmailov"}>Asan Smailov</a>
+                        </li>
+                        <li className={styles.descriptionContent}>
+                            <a className={styles.a} href={"https://github.com/DiarrheaGiver"}>Amet Chalbash</a>
+                        </li>
+                        <li className={styles.descriptionContent}>
+                            <a className={styles.a} href={"https://github.com/EmirBuzhurov"}>Emir Buzhurov</a>
+                        </li>
+                    </ul>
                     <p className={styles.descriptionContent}>
                         Скачать игру можно тут: <a className={styles.a} href={"https://github.com/DmitriySkiba/Jump-Fight/releases"}>Ссылка</a>
                     </p>
                 </div>
+                <Image src={screenshot3} alt={"screenshot3"} width={760} height={480} className={styles.descriptionImg}/>
             </div>
             <div className={styles.content}>
                 <div className={styles.description}>
